@@ -1,0 +1,9 @@
+UniPhysics
+Copyright 2026 UniPhysics contributors
+
+This release contains evaluation software and curated copies of third-party
+benchmark data. The MIT License applies to the evaluation software only.
+See DATA_LICENSE.md for dataset attribution and licensing boundaries.
+
+The figures in docs/assets are reproduced from the accompanying UniPhysics
+manuscript. They are not covered by the software license.

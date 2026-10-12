@@ -1,0 +1,5 @@
+include README.md README.zh-CN.md LICENSE NOTICE DATA_LICENSE.md .env.example requirement.txt
+recursive-include docs *.md *.png *.txt
+recursive-include tests *.py
+recursive-include tools *.py
+recursive-include Eval *.sh *.jsonl *.json

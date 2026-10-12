@@ -1,0 +1,16 @@
+# UniPhysics evaluation dependencies, exported from the swift environment.
+# Python 3.12.0; Linux x86_64; PyTorch CUDA 12.4 wheels.
+# Direct evaluation/backend dependencies are pinned to their installed versions.
+# Transitive dependencies are resolved by pip; this is not a full environment lock.
+# See docs/ENVIRONMENT.md and docs/swift-environment.txt for the full snapshot.
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124
+vllm==0.8.4
+xformers==0.0.29.post2
+transformers==4.51.3
+tokenizers==0.21.4
+openai==2.41.1
+tqdm==4.68.2

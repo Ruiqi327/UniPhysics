@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uniphysics-eval"
+version = "0.1.0"
+description = "A quality-controlled unified framework for evaluating LLMs' physical reasoning ability"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE", "DATA_LICENSE.md"]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["openai>=1.30,<3", "tqdm>=4.66,<5"]
+
+[project.optional-dependencies]
+local = ["vllm>=0.8,<1"]
+dev = ["pytest>=8,<10", "build>=1.2,<2"]
+
+[project.scripts]
+uniphysics = "uniphysics.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["uniphysics*", "Eval*"]
+
+[tool.setuptools.package-data]
+Eval = ["benchmark/*.jsonl", "benchmark/*.json", "*.sh"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
